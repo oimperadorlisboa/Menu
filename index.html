@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102d29">
+<title>O Imperador | Ementa</title>
+<style>
+:root{--bg:#102d29;--card:#173934;--gold:#d7b66a;--cream:#fffaf0;--muted:#d9d5c8}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--cream);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{padding:46px 18px 28px;text-align:center;border-bottom:1px solid #d7b66a55}
+.crown{font-size:38px;color:var(--gold)} h1{font-family:Georgia,serif;font-size:42px;margin:3px 0;color:#fff}
+.subtitle{color:var(--gold);letter-spacing:.22em;text-transform:uppercase}
+.lang{margin-top:20px}.lang button{border:1px solid var(--gold);background:transparent;color:var(--cream);padding:9px 14px;border-radius:999px;cursor:pointer}
+.lang button.active{background:var(--gold);color:#102d29}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow:auto;padding:12px;background:#102d29f2;border-bottom:1px solid #d7b66a33}
+nav a{white-space:nowrap;color:var(--gold);text-decoration:none;border:1px solid #d7b66a55;border-radius:999px;padding:8px 13px;font-size:14px}
+main{max-width:780px;margin:auto;padding:12px 16px 60px}
+section{scroll-margin-top:70px;padding-top:22px}
+h2{font-family:Georgia,serif;color:var(--gold);font-size:27px;border-bottom:1px solid #d7b66a55;padding-bottom:8px}
+.item{display:grid;grid-template-columns:1fr auto;gap:14px;padding:11px 2px;border-bottom:1px solid #ffffff12}
+.item b{font-weight:600}.en{display:block;color:var(--muted);font-size:13px;margin-top:3px}.price{color:var(--gold);font-weight:700;white-space:nowrap}
+.note{text-align:center;color:var(--muted);font-size:13px;margin-top:34px}
+footer{text-align:center;padding:28px 16px 45px;border-top:1px solid #d7b66a44;color:var(--gold)}
+footer a{color:var(--gold);text-decoration:none}
+.en{display:none;color:var(--muted);font-size:13px;margin-top:3px}
+body.enmode .item b{display:none}
+body.enmode .en{display:block;color:var(--cream);font-size:16px;margin-top:0;font-weight:600}
+@media(min-width:700px){main{padding-left:30px;padding-right:30px}}
+</style>
+</head>
+<body class="pt">
+<header>
+ <div class="crown">♛</div>
+ <div class="subtitle">Restaurante</div>
+ <h1>O IMPERADOR</h1>
+ <div class="lang"><button id="pt" class="active">🇵🇹 Português</button> <button id="enbtn">🇬🇧 English</button></div>
+</header>
+
+<nav>
+<a href="#entradas">Entradas</a><a href="#sopas">Sopas</a><a href="#peixe">Peixe</a><a href="#carne">Carne</a>
+<a href="#vegetariano">Vegetariano</a><a href="#sobremesas">Sobremesas</a><a href="#bebidas">Bebidas</a><a href="#vinhos">Vinhos</a>
+</nav>
+
+<main>
+<section id="entradas"><h2>Entradas <span class="en">/ Starters</span></h2>
+<div class="item"><div><b>Gambas à Guilho</b><span class="en">Garlic Prawns</span></div><span class="price">€15.00</span></div>
+<div class="item"><div><b>Salada de polvo</b><span class="en">Octopus Salad</span></div><span class="price">€10.00</span></div>
+<div class="item"><div><b>Chouriço assado</b><span class="en">Roasted Portuguese Chorizo</span></div><span class="price">€7.00</span></div>
+<div class="item"><div><b>Bolinhos de bacalhau</b><span class="en">Cod Dumplings</span></div><span class="price">€6.00</span></div>
+<div class="item"><div><b>Amêijoas à Bulhão Pato</b><span class="en">Bulhão Pato-style clams</span></div><span class="price">€16.00</span></div>
+<div class="item"><div><b>Ovos mexidos com farinheira</b><span class="en">Scrambled eggs with farinheira</span></div><span class="price">€6.00</span></div>
+<div class="item"><div><b>Azeitonas temperadas</b><span class="en">Seasoned Olives</span></div><span class="price">€2.50</span></div>
+<div class="item"><div><b>Queijo Nisa</b><span class="en">Nisa cheese</span></div><span class="price">€6.00</span></div>
+<div class="item"><div><b>Queijo Tété</b><span class="en">Tété cheese</span></div><span class="price">€5.00</span></div>
+<div class="item"><div><b>Queijo no forno com doce de tomate</b><span class="en">Baked cheese with tomato jam</span></div><span class="price">€10.00</span></div>
+<div class="item"><div><b>Tábua mista</b><span class="en">Mixed Charcuterie board</span></div><span class="price">€17.00</span></div>
+<div class="item"><div><b>Tábua de presunto de porco bísaro</b><span class="en">Bísaro Pork Ham board</span></div><span class="price">€15.00</span></div>
+<div class="item"><div><b>Pão</b><span class="en">Bread</span></div><span class="price">€2.00</span></div>
+<div class="item"><div><b>Manteiga de Ervas</b><span class="en">Aromatic Herb Butter</span></div><span class="price">€2.50</span></div>
+</section>
+
+<section id="sopas"><h2>Sopas <span class="en">/ Soups</span></h2>
+<div class="item"><div><b>Sopa do dia</b><span class="en">Soup of the day</span></div><span class="price">€2.50</span></div>
+<div class="item"><div><b>Creme de marisco</b><span class="en">Seafood soup</span></div><span class="price">€4.50</span></div>
+</section>
+
+<section id="peixe"><h2>Peixe <span class="en">/ Fish</span></h2>
+<div class="item"><div><b>Bacalhau à Minhota</b><span class="en">Minho-style cod</span></div><span class="price">€19.00</span></div>
+<div class="item"><div><b>Bacalhau com broa</b><span class="en">Cod with Cornbread</span></div><span class="price">€19.00</span></div>
+<div class="item"><div><b>Filetes de polvo com arroz de grelos</b><span class="en">Octopus Fillets with Turnip Green Rice</span></div><span class="price">€17.00</span></div>
+<div class="item"><div><b>Feijoada de gambas</b><span class="en">Prawn and bean stew</span></div><span class="price">1p €16 / 2p €30</span></div>
+<div class="item"><div><b>Polvo à Lagareiro</b><span class="en">Lagareiro-style octopus</span></div><span class="price">€18.00</span></div>
+<div class="item"><div><b>Massada de garoupa e gambas</b><span class="en">Grouper and prawn pasta stew</span></div><span class="price">1p €25 / 2p €40</span></div>
+<div class="item"><div><b>Espetadas de atum com gambas</b><span class="en">Tuna and prawn skewers</span></div><span class="price">€18.00</span></div>
+<div class="item"><div><b>Bacalhau à Lagareiro</b><span class="en">Lagareiro-style Cod</span></div><span class="price">€18.00</span></div>
+<div class="item"><div><b>Arroz de polvo</b><span class="en">Octopus rice</span></div><span class="price">1p €15 / 2p €28</span></div>
+<div class="item"><div><b>Bacalhau à Brás</b><span class="en">Cod with thin-cut fried potatoes and scrambled eggs</span></div><span class="price">€16.00</span></div>
+<div class="item"><div><b>Robalo grelhado</b><span class="en">Grilled sea bass</span></div><span class="price">€16.00</span></div>
+<div class="item"><div><b>Dourada grelhada</b><span class="en">Grilled gilthead sea bream</span></div><span class="price">€16.00</span></div>
+<div class="item"><div><b>Garoupa à posta grelhada</b><span class="en">Grilled grouper steak</span></div><span class="price">P.V.</span></div>
+<div class="item"><div><b>Salmão grelhado</b><span class="en">Grilled salmon</span></div><span class="price">€17.00</span></div>
+<div class="item"><div><b>Lulas grelhadas</b><span class="en">Grilled Squid</span></div><span class="price">€18.00</span></div>
+<div class="item"><div><b>Bacalhau com natas</b><span class="en">Cod with Cream</span></div><span class="price">€16.00</span></div>
+</section>
+
+<section id="carne"><h2>Carne <span class="en">/ Meat</span></h2>
+<div class="item"><div><b>Posta da vazia</b><span class="en">Sirloin steak</span></div><span class="price">€30.00</span></div>
+<div class="item"><div><b>Bife à Imperador — Frito</b><span class="en">Imperador-style steak</span></div><span class="price">€14.00</span></div>
+<div class="item"><div><b>Bife do lombo com grelos e batata a murro</b><span class="en">Beef Tenderloin with Turnip Greens and Punched Potatoes</span></div><span class="price">€20.00</span></div>
+<div class="item"><div><b>Língua de vaca com puré de batata</b><span class="en">Beef tongue with mashed potatoes</span></div><span class="price">1p €17 / 2p €30</span></div>
+<div class="item"><div><b>Bochechas de porco preto estufadas com puré de batata</b><span class="en">Braised Iberian pork cheeks with mashed potatoes</span></div><span class="price">2p €45 P.V.</span></div>
+<div class="item"><div><b>Costeleta de vitela</b><span class="en">Veal chop</span></div><span class="price">€19.00</span></div>
+<div class="item"><div><b>Bitoque à Imperador — frito ou grelhado</b><span class="en">Imperador-style steak — fried or grilled</span></div><span class="price">€13.00</span></div>
+<div class="item"><div><b>Carne de porco à alentejana</b><span class="en">Alentejo-style pork with clams</span></div><span class="price">€14.00</span></div>
+<div class="item"><div><b>Picanha à Imperador</b><span class="en">Imperador-style rump cap steak</span></div><span class="price">€20.00</span></div>
+<div class="item"><div><b>Bife da vazia</b><span class="en">Sirloin steak</span></div><span class="price">€22.00</span></div>
+<div class="item"><div><b>Secretos de porco preto</b><span class="en">Iberian Black pork cut</span></div><span class="price">€18.00</span></div>
+<div class="item"><div><b>Bifinhos de frango — fritos ou grelhados</b><span class="en">Chicken escalopes — fried or grilled</span></div><span class="price">€14.00</span></div>
+<div class="item"><div><b>Escalopes de novilho com cogumelos</b><span class="en">Beef escalopes with mushrooms</span></div><span class="price">€16.00</span></div>
+<div class="item"><div><b>Francesinha</b><span class="en">Francesinha</span></div><span class="price">€14.00</span></div>
+</section>
+
+<section id="vegetariano"><h2>Vegetariano <span class="en">/ Vegetarian</span></h2>
+<div class="item"><div><b>Omelete</b><span class="en">Omelette</span></div><span class="price">€13.00</span></div>
+<div class="item"><div><b>Legumes à Brás</b><span class="en">Vegetables with thin-cut fried potatoes and scrambled eggs</span></div><span class="price">€15.00</span></div>
+</section>
+
+<section id="sobremesas"><h2>Sobremesas <span class="en">/ Desserts</span></h2>
+<div class="item"><div><b>Tiramisù de pistácio</b><span class="en">Pistachio tiramisu</span></div><span class="price">€5.00</span></div>
+<div class="item"><div><b>Cheesecake de frutos vermelhos</b><span class="en">Red Berry cheesecake</span></div><span class="price">€5.50</span></div>
+<div class="item"><div><b>Pudim</b><span class="en">Pudding</span></div><span class="price">€5.00</span></div>
+<div class="item"><div><b>Baba de camelo</b><span class="en">Caramelised mousse</span></div><span class="price">€4.00</span></div>
+<div class="item"><div><b>Arroz doce</b><span class="en">Rice Pudding</span></div><span class="price">€5.00</span></div>
+<div class="item"><div><b>Mousse de chocolate</b><span class="en">Chocolate mousse</span></div><span class="price">€4.50</span></div>
+<div class="item"><div><b>Mousse de lima</b><span class="en">Lime mousse</span></div><span class="price">€5.00</span></div>
+<div class="item"><div><b>Leite-creme</b><span class="en">Crème Brûlée</span></div><span class="price">€5.00</span></div>
+</section>
+
+<section id="bebidas"><h2>Bebidas <span class="en">/ Drinks</span></h2>
+<div class="item"><div><b>Imperial 20 cl</b></div><span class="price">€1.50</span></div>
+<div class="item"><div><b>Túlipa 40 cl</b></div><span class="price">€3.00</span></div>
+<div class="item"><div><b>Caneca 50 cl</b></div><span class="price">€4.00</span></div>
+<div class="item"><div><b>Somersby</b></div><span class="price">€3.50</span></div>
+<div class="item"><div><b>Coca Cola / Coca Cola Zero</b></div><span class="price">€2.50</span></div>
+<div class="item"><div><b>Café</b></div><span class="price">€1.20</span></div>
+<div class="item"><div><b>Capuccino</b></div><span class="price">€3.00</span></div>
+<div class="item"><div><b>Aperol Spritz</b></div><span class="price">€7.00</span></div>
+<div class="item"><div><b>Margarita</b></div><span class="price">€7.00</span></div>
+<div class="item"><div><b>Mojito</b></div><span class="price">€7.00</span></div>
+<div class="item"><div><b>Negroni</b></div><span class="price">€8.00</span></div>
+</section>
+
+<section id="vinhos"><h2>Vinhos <span class="en">/ Wines</span></h2>
+<div class="item"><div><b>Copo de Vinho Tinto</b><span class="en">Glass of Red Wine</span></div><span class="price">€3.00</span></div>
+<div class="item"><div><b>Vinho Tinto da Casa</b><span class="en">House Red Wine</span></div><span class="price">€11.00</span></div>
+<div class="item"><div><b>Vinho Tinto Caiado</b></div><span class="price">€15.00</span></div>
+<div class="item"><div><b>Vinho Tinto Adega Maior</b></div><span class="price">€22.00</span></div>
+<div class="item"><div><b>Copo de Vinho Branco</b><span class="en">Glass of White Wine</span></div><span class="price">€3.00</span></div>
+<div class="item"><div><b>Vinho Branco da Casa</b><span class="en">House White Wine</span></div><span class="price">€11.00</span></div>
+<div class="item"><div><b>Vinho Branco Caiado</b></div><span class="price">€15.00</span></div>
+<div class="item"><div><b>Vinho Branco Adega Maior</b></div><span class="price">€22.00</span></div>
+<div class="item"><div><b>Vinho Verde Pipas 0.75 cl</b></div><span class="price">€12.00</span></div>
+<div class="item"><div><b>Vinho Verde Quinta de Curvos Alvarinho</b></div><span class="price">€22.00</span></div>
+<div class="item"><div><b>Espumante Bairrada RS Bruto</b></div><span class="price">€17.00</span></div>
+</section>
+
+<p class="note">IVA incluído à taxa legal em vigor · Neste estabelecimento existe Livro de Reclamações.</p>
+</main>
+
+<footer>
+<strong>OBRIGADO PELA SUA VISITA</strong><br><br>
+☎ <a href="tel:+351218471676">218 471 676</a><br>
+Facebook: romaimperador · Instagram: oimperadorlisboa
+</footer>
+<script>
+const body=document.body;
+const pt=document.getElementById('pt');
+const enbtn=document.getElementById('enbtn');
+
+const labels={
+ pt:{entradas:"Entradas",sopas:"Sopas",peixe:"Peixe",carne:"Carne",vegetariano:"Vegetariano",sobremesas:"Sobremesas",bebidas:"Bebidas",vinhos:"Vinhos"},
+ en:{entradas:"Starters",sopas:"Soups",peixe:"Fish",carne:"Meat",vegetariano:"Vegetarian",sobremesas:"Desserts",bebidas:"Drinks",vinhos:"Wines"}
+};
+
+function setLanguage(lang){
+ body.className=lang==="pt"?"pt":"enmode";
+ pt.classList.toggle("active",lang==="pt");
+ enbtn.classList.toggle("active",lang==="en");
+ document.documentElement.lang=lang;
+ document.querySelectorAll("nav a").forEach(a=>{
+   const id=a.getAttribute("href").slice(1);
+   a.textContent=labels[lang][id];
+ });
+ document.querySelectorAll("main section").forEach(sec=>{
+   const h=sec.querySelector("h2");
+   if(h) h.textContent=labels[lang][sec.id];
+ });
+}
+pt.onclick=()=>setLanguage("pt");
+enbtn.onclick=()=>setLanguage("en");
+setLanguage("pt");
+</script>
+</body></html>
